@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# displays PID line containing base word
+# Uses code from "1-list_your_processes" to only display lines containing "bash"
 # shellcheck disable=SC2009
-ps -aux | grep bash
+
+ps axuf | grep "bash"
